@@ -4,11 +4,13 @@
 
 `“In wenigen Schritten zum eigenen Geoportal“`
 
-Wer durch die Geoportale des Bundes, der Länder und vieler Kommunen im deutschsprachigen Raum navigiert, stoßt in letzter Zeit zunehmend auf individuell gestaltete Masterportale. Nachdem das Open-Source Projekt bereits seit einigen Jahren auf der FOSSGIS präsent ist, wird es auch auf der diesjährigen FOSS4G mit Besuchern aus aller Welt vorgestellt.  
+Wer durch die Geoportale des Bundes, der Länder und vieler Kommunen im deutschsprachigen Raum navigiert, stößt in letzter Zeit zunehmend auf individuell gestaltete Masterportale. Gleichermaßen eignet sich das funktionsreiche Open Source Projekt als Client-Komponente für firmeninterne Geodateninfrastrukturen. Die Vielzahl an unterstützten Standards vereinfacht eine nahtlose Integration in bestehende GDIs.
 
-terrestris lädt Sie herzlich zum ersten kostenfreien **Masterportal Webinar** am **30. Juni um 10:00 Uhr** ein - mit einem einleitenden Einblick in die Organisation der Implementierungspartnerschaft durch [dataport](https://www.dataport.de/was-wir-bewegen/portfolio/masterportal/). In einer 1-stündigen Session werden u.a. die folgenden Themen beleuchtet:  
+Nachdem das Open-Source Projekt bereits seit einigen Jahren auf der FOSSGIS präsent ist, wird es auch auf der diesjährigen FOSS4G mit Besuchern aus aller Welt vorgestellt.  
 
-- Was macht die IP (Implementierungs­­partnerschaft Masterportal)?
+terrestris lädt Sie herzlich zum ersten kostenfreien **Masterportal Webinar** am **30. Juni um 10:00 Uhr** ein. In einer 1-stündigen Session werden u.a. die folgenden Themen beleuchtet:  
+
+- Vorstellung der IP (Implementierungs­­partnerschaft Masterportal) durch [dataport](https://www.dataport.de/was-wir-bewegen/portfolio/masterportal/).
 - Architektur des Masterportals
 - Basiskonfiguration eines Portals
     - Layer, Dienste, Suche und hilfreiche Tools
@@ -16,11 +18,10 @@ terrestris lädt Sie herzlich zum ersten kostenfreien **Masterportal Webinar** a
 - Individuelles Design
 - Erweiterbarkeit durch Addons
 
-Am Ende wird es eine offene Fragerunde geben und gerne auf individuelle Fragen zum Masterportal eingegangen.  
+Am Ende wird es eine offene Fragerunde und einen Ausblick auf zukünftige Entwicklungen geben.
 
 ## Wichige Infos:
 
-Es wird keine Begrenzung der TeilnehmerInnen geben.  
 **Kosten:** Keine  
-**Anmeldung:** Email an blitza@terrestris.de bis zum **23.06.2022**  
-**Zugangslink:** Auf Anfrage an blitza@terrestris.de
+**Anmeldung:** Email an info@terrestris.de bis zum **28.06.2022** mit Betreff [Anmeldung Masterportal Webinar]  
+**Zugangslink:** Wird nach erfolgter Annmeldung mitgeteilt.
