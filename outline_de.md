@@ -49,7 +49,7 @@ Jeweils allgemeine Erläuterung und konkrete Beispiele. Siehe hierzu: [Masterpor
 - Sukzessive Konfiguration des Portals:
     - Layer (WMS, WFS, WMTS)
     - Rest-Services: Print und Suche
-    - Werkzeuge. Hier besonders neue Module: Routing!
+    - Werkzeuge.
     - Logo und Basic Farben
     - ...
 
