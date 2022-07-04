@@ -1,0 +1,27 @@
+:root {
+    --terrestris-blue: #002565;
+    --terrestris-orange: #f9b820;
+  }
+
+.bg-barBottom>div:nth-of-type(1) {
+    background-color: var(--terrestris-orange);
+}
+
+.bg-barBottom>div:nth-of-type(n+2) {
+    background-color: var(--terrestris-blue);
+}
+
+
+.slidev-layout h1+p {
+    margin-top: -0.5rem;
+    margin-bottom: 0;
+    opacity: 1;
+}
+
+.slidev-layout h1,h2 {
+    color: #002565;
+}
+
+.col-right {
+    padding-left: 1.5vw;
+}
