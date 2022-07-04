@@ -30,7 +30,7 @@ const props = defineProps({
 <template>
   <div>
     <div class="slidev-layout two-columns">
-      <img class="header-logo py-2" src="terrestris-logo-normal.svg" />
+      <img class="header-logo py-2" src="/terrestris-logo-normal.svg" />
       <slot name="title" />
     </div>
     <div class="slidev-layout two-columns w-full h-full grid grid-cols-2">

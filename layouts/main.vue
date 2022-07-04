@@ -2,7 +2,7 @@
 <!-- default.vue -->
 <template>
   <div class="slidev-layout default main">
-    <img class="header-logo py-2" src="terrestris-logo-normal.svg" />
+    <img class="header-logo py-2" src="/terrestris-logo-normal.svg" />
     <slot />
     <!-- <div class="top-left-box" /> -->
     <!-- <div class="bottom-right-box" /> -->
@@ -10,7 +10,6 @@
 </template>
 
 <style scoped>
-
 .slidev-layout {
   padding-bottom: 0;
   padding-top: 1rem;

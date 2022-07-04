@@ -9,7 +9,7 @@
 
 <style>
 .cover {
-    background-image: url("public/header_upper_left.svg");
+    background-image: url("/header_upper_left.svg");
     background-repeat: no-repeat;
     margin: auto;
 }

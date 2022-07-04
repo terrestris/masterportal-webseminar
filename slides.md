@@ -1,15 +1,8 @@
 ---
 theme: default
-# background: rgb(255,255,255)
 highlighter: shiki
 lineNumbers: true
 colorSchema: light
-
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
 drawings:
   persist: false
 class: text-center text-black
@@ -18,7 +11,7 @@ layout: start
 ---
 # 
 
-![Masterportal Webinar Logo](terrestris_webinar_logo.svg)
+![Masterportal Webinar Logo](/terrestris_webinar_logo.svg)
 
 ### In wenigen Schritten zum eigenen Geoportal
 ##### terrestris und dataport am 30. Juni 2022
@@ -45,7 +38,7 @@ layout: two-cols-header
 
 ::right::
 
-![terrestris](terrestris_greece.png)
+![terrestris](/terrestris_greece.png)
 
 <p class="text-center py-2">
 
@@ -86,7 +79,7 @@ layout: main
 # 👨‍💻 Technischer Background
 
 <div class="flex items-center py-4 mt-12">
-  <img src="Vue.js_Logo_2.svg" width="5rem" class="basis-10 framework" />
+  <img src="/Vue.js_Logo_2.svg" width="5rem" class="basis-10 framework" />
   <span class="basis-3/12 px-5">
     Vue.js
   </span>
@@ -96,7 +89,7 @@ layout: main
 </div>
 
 <div class="flex items-center py-4">
-  <img src="Bootstrap_logo.svg" width="5rem" class="basis-10 framework" />
+  <img src="/Bootstrap_logo.svg" width="5rem" class="basis-10 framework" />
   <span class="basis-3/12 px-5">
     Bootstrap
   </span>
@@ -106,7 +99,7 @@ layout: main
 </div>
 
 <div class="flex items-center py-4">
-  <img src="openlayers_logo.png" width="5rem" class="basis-10 framework" />
+  <img src="/openlayers_logo.png" width="5rem" class="basis-10 framework" />
   <span class="basis-3/12 px-5">
     Openlayers
   </span>
@@ -116,7 +109,7 @@ layout: main
 </div>
 
 <div class="flex items-center py-4">
-  <img src="cesium.png" width="5rem" class="basis-10 framework" />
+  <img src="/cesium.png" width="5rem" class="basis-10 framework" />
   <span class="basis-3/12 px-5">
     Cesium
   </span>
@@ -133,7 +126,7 @@ layout: main
 
 
 <div class="flex items-center mt-32">
-  <img src="core-api-addon_paths.svg"  class="self-center" />
+  <img src="/core-api-addon_paths.svg"  class="self-center" />
 </div>
 ---
 layout: main
@@ -143,7 +136,7 @@ layout: main
 
 <!-- ### Begriff definieren, aufzeigen der einzelnen Dateien -->
 
-  <img src="code_architecture.png" class="w-9/10" />
+  <img src="/code_architecture.png" class="w-9/10" />
 
 ---
 layout: two-cols-header
