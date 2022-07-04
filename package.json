@@ -2,7 +2,7 @@
   "name": "masterportal-webinar",
   "version": "0.0.1",
   "description": "Slides for the Masterportal Webinar.",
-  "author": "Hannes Blitza <blitza@terrestris.de> (https://terrestris.de)",  
+  "author": "Hannes Blitza <blitza@terrestris.de> (https://terrestris.de)",
   "private": true,
   "scripts": {
     "build": "slidev build",
@@ -13,5 +13,8 @@
     "@slidev/cli": "^0.32.3",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.23.1"
   }
 }
