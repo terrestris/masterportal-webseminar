@@ -1,14 +1,18 @@
 # Masterportal Webinar
 
+![MP Webibar Logo](./public/terrestris_webinar_logo.png)
+
 This repo contains outline and slides for the `Masterportal Webinar`.  
 
-:construction: Work in Progress :construction:
+## Online Slides
+
+[Access presentation](https://terrestris.github.io/masterportal-webinar)
 
 ## Outline
 
 [Outline in German](outline_de.md)
 
-## Slides
+## Dev
 
 To start the slide show:
 
