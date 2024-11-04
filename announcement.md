@@ -1,27 +1,28 @@
-## Einladung zum ersten Masterportal Webinar
+## Einladung zum zweiten Masterportal Webinar
 
 ![terrestris Webinar Logo](public/terrestris_webinar_logo.svg)
 
-`“In wenigen Schritten zum eigenen Geoportal“`
+`“Masterportal v3 Migration und Integration“`
 
-Wer durch die Geoportale des Bundes, der Länder und vieler Kommunen im deutschsprachigen Raum navigiert, stößt in letzter Zeit zunehmend auf individuell gestaltete Masterportale. Gleichermaßen eignet sich das funktionsreiche Open Source Projekt als Client-Komponente für firmeninterne Geodateninfrastrukturen. Die Vielzahl an unterstützten Standards vereinfacht eine nahtlose Integration in bestehende GDIs.
+Wer durch die öffentlichen Geoportale des Bundes, der Länder und vieler Kommunen im deutschsprachigen Raum navigiert, stößt in letzter Zeit zunehmend auf GIS-Clients die auf dem Open Source Toolkit Masterportal basieren.
 
-Nachdem das Open-Source Projekt bereits seit einigen Jahren auf der FOSSGIS präsent ist, wird es auch auf der diesjährigen FOSS4G mit Besuchern aus aller Welt vorgestellt.  
+Das neue Major Release wurde auf der [FOSSGIS in HH](https://pretalx.com/fossgis2024/talk/R8MYNT/) vom LGV offiziell vorgestellt und ist seit Oktober als LTS-Version erschienen (v3.3).
 
-terrestris lädt Sie herzlich zum ersten kostenfreien **Masterportal Webinar** am **30. Juni um 10:00 Uhr** ein. In einer 1-stündigen Session werden u.a. die folgenden Themen beleuchtet:  
+Koordiniert und angetrieben durch die Mitglieder der IP (Implementierungspartnerschaft) wird das Projekt fortwährend souverän weiterentwickelt und ist somit zu einem integralen Bestandteil vieler GDIs geworden.
+
+terrestris lädt Sie herzlich zum zweiten kostenfreien **Masterportal Webinar** am **05. Dezember um 10:00 Uhr** ein. In einer 1-stündigen Session werden u.a. die folgenden Themen beleuchtet:  
 
 - Vorstellung der IP (Implementierungs­­partnerschaft Masterportal) durch [dataport](https://www.dataport.de/was-wir-bewegen/portfolio/masterportal/).
-- Architektur des Masterportals
-- Basiskonfiguration eines Portals
-    - Layer, Dienste, Suche und hilfreiche Tools
-- Metadaten-Integration
-- Individuelles Design
-- Erweiterbarkeit durch Addons
+- Überblick: Neue Features in v3 und neue Konfigurationsmöglichkeiten
+- Migration: Was ist zu beachten?
+- Integration:
+    - Einbindung bestehender Such-Backends
+    - Anbindung an Benutzerdatenverwaltung
 
-Am Ende wird es eine offene Fragerunde und einen Ausblick auf zukünftige Entwicklungen geben.
+Das Webinar richtet sich an all diejenigen, die einen Umstieg auf die v3 Version vorhaben oder generell einen Einstieg in die Software erlangen wollen.
 
 ## Wichige Infos:
 
 **Kosten:** Keine  
-**Anmeldung:** Email an info@terrestris.de bis zum **28.06.2022** mit Betreff [Anmeldung Masterportal Webinar]  
+**Anmeldung:** Email an info@terrestris.de bis zum **02.12.2024** mit Betreff [Anmeldung Masterportal Webinar]  
 **Zugangslink:** Wird nach erfolgter Annmeldung mitgeteilt.

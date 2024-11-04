@@ -20,7 +20,7 @@
 
 - dataport integrieren
 - übliche Kanäle (website, social media)
-- Warmakquise (Bestandskunden darauf aufmerksam machen)
+- Bestandskunden darauf aufmerksam machen
 
 ## Konkrete Inhalte
 
