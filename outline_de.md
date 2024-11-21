@@ -50,5 +50,5 @@
 - Migration `npm run migrateConfig`
     - Kurze Erläuterung des Logs
 - Anpassung an v3
-- Exemplarische Konfiguration der Suche (OGC API Feature)
+- Exemplarische Konfiguration der Suche
 - Anbindung an Nutzerverwaltung (Keycloak)
