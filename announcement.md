@@ -2,7 +2,7 @@
 
 ![terrestris Webinar Logo](public/terrestris_webinar_logo.svg)
 
-`“Masterportal: Migration auf v3 und Integration“`
+`“Masterportal: Migration auf v3 und Integration in GDI`
 
 Wer durch die öffentlichen Geoportale des Bundes, der Länder und vieler Kommunen im deutschsprachigen Raum navigiert, stößt in letzter Zeit zunehmend auf GIS-Clients die auf dem Open Source Toolkit Masterportal basieren.
 
