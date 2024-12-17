@@ -1,6 +1,6 @@
-## Einladung zum zweiten Masterportal Webinar
+## Einladung zum zweiten Masterportal Webseminar
 
-![terrestris Webinar Logo](public/terrestris_webinar_logo.svg)
+![terrestris Webseminar Logo](public/terrestris_webseminar_logo.svg)
 
 `“Masterportal: Migration auf v3 und Integration in GDI`
 
@@ -10,7 +10,7 @@ Das neue Major Release wurde auf der vom [LGV](https://www.hamburg.de/politik-un
 
 Koordiniert und angetrieben durch die Mitglieder der IP (Implementierungspartnerschaft) wird das Projekt fortwährend weiterentwickelt und ist somit zu einem integralen Bestandteil vieler GDIs im deutschsprachigem Raum geworden.
 
-terrestris lädt Sie herzlich zum zweiten kostenfreien **Masterportal Webinar** am **18. Dezember um 10:00 Uhr** ein. In einer 1-stündigen Session werden u.a. die folgenden Themen beleuchtet:  
+terrestris lädt Sie herzlich zum zweiten kostenfreien **Masterportal Webseminar** am **18. Dezember um 10:00 Uhr** ein. In einer 1-stündigen Session werden u.a. die folgenden Themen beleuchtet:  
 
 - Vorstellung der IP (Implementierungs­­partnerschaft Masterportal) durch [dataport](https://www.dataport.de/was-wir-bewegen/portfolio/masterportal/).
 - Überblick: Neue Features in v3 und neue Konfigurationsmöglichkeiten
@@ -19,10 +19,10 @@ terrestris lädt Sie herzlich zum zweiten kostenfreien **Masterportal Webinar** 
     - Einbindung von Such-Backends (Beispiele)
     - Anbindung an Benutzerdatenverwaltung
 
-Das Webinar richtet sich an all diejenigen, die einen Umstieg auf die v3 Version vorhaben oder generell einen Einstieg in die Software erlangen wollen.
+Das Webseminar richtet sich an all diejenigen, die einen Umstieg auf die v3 Version vorhaben oder generell einen Einstieg in die Software erlangen wollen.
 
 ## Wichige Infos:
 
 **Kosten:** Keine  
-**Anmeldung:** Email an info@terrestris.de bis zum **11.12.2024** mit Betreff [Anmeldung Masterportal Webinar]  
+**Anmeldung:** Email an info@terrestris.de bis zum **11.12.2024** mit Betreff [Anmeldung Masterportal Webseminar]  
 **Zugangslink:** Wird nach erfolgter Annmeldung mitgeteilt.
