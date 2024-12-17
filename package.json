@@ -1,9 +1,9 @@
 {
   "name": "masterportal-webinar",
-  "version": "0.0.1",
+  "version": "2.0.0",
+  "private": true,
   "description": "Slides for the Masterportal Webinar.",
   "author": "Hannes Blitza <blitza@terrestris.de> (https://terrestris.de)",
-  "private": true,
   "scripts": {
     "build": "slidev build --base /masterportal-webinar/",
     "dev": "slidev --open",
@@ -15,13 +15,13 @@
     "@slidev/theme-seriph": "*"
   },
   "devDependencies": {
-    "playwright-chromium": "^1.23.1",
-    "typescript": "*",
-    "vite": "*",
     "@vitejs/plugin-vue": "*",
     "@vue/compiler-sfc": "*",
     "autoprefixer": "*",
+    "playwright-chromium": "^1.23.1",
     "postcss": "*",
-    "tailwindcss": "2.2.*"
+    "tailwindcss": "2.2.*",
+    "typescript": "*",
+    "vite": "*"
   }
 }

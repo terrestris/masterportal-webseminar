@@ -13,11 +13,5 @@ export default {
       <div class="basis-5" />
       <div class="basis-8" />
       <div class="basis-auto">4</div>
-    <!-- <div class="w-1/2 text-left">
-      {{ title }}
-    </div>
-    <div class="w-1/2 flex justify-end">
-      <slot />
-    </div> -->
   </div>
 </template>

@@ -6,16 +6,22 @@ colorSchema: light
 drawings:
   persist: false
 class: text-center text-black
-title: 'Masterportal Webinar'
+title: 'Masterportal Web-Seminar'
 layout: start
 ---
 # 
 
-![Masterportal Webinar Logo](/terrestris_webinar_logo.svg)
+![Masterportal Web-Seminar Logo](/terrestris_webinar_logo.svg)
 
-### In wenigen Schritten zum eigenen Geoportal
+### V3 Release: Neuigkeiten, Migration, Login-Mechanismus
 ##### terrestris und dataport am 17. Dezember 2024
 
+
+---
+layout:  statement
+---
+# 👥Vorstellung der IP
+ 
 ---
 layout: two-cols-header
 ---
@@ -63,14 +69,10 @@ layout: main
 - 🌍 **Globale Konfiguration vs. ⚙️ Portalkonfiguration**
 - 📰 **V3 Neuerungen**
 - ⏫ **V3 Migration**
+- 🔭 **SearchInterface**
 - 🔐 **Integration Identitäts- und Zugriffsverwaltung**
 - ❓ **Fragerunde**
 </div>
-
----
-layout:  statement
----
-# 👥Vorstellung der IP
 
 ---
 layout: main
@@ -94,7 +96,7 @@ layout: main
     Bootstrap
   </span>
   <span class="basis-full px-5">
-    Frontend Framework
+    CSS Bibliothek
   </span>
 </div>
 
@@ -104,7 +106,7 @@ layout: main
     Openlayers
   </span>
   <span class="basis-full px-5">
-    Webmapping API
+    2D Webmapping API
   </span>
 </div>
 
@@ -117,6 +119,8 @@ layout: main
     Library for 3D Globes (WebGL basiert)
   </span>
 </div>
+
+- Weitere i18next, chart.js, jsts, axios
 
 ---
 layout: main
@@ -172,12 +176,60 @@ layout: main
   - Layer-Katalog (Suche, Baselayer, Layer)
 - Layer-Pills 💊
 - Weitere Tools: `News`, `baseLayerSwitcher`, `customMenuElement`, `StatisticDashboard`, `openConfig`, `About`
-- 3D: Core Refactoring, Print 3D, Modeler 3D (https://pretalx.com/fossgis2024/talk/93LW77/)[https://pretalx.com/fossgis2024/talk/93LW77/]
+- 3D: Core Refactoring, Print 3D, Modeler 3D --> [FOSSGIS Talk](https://pretalx.com/fossgis2024/talk/93LW77/)
 
 ---
 layout: statement
 ---
 # Live-Demo 🎮
+
+---
+layout: main
+---
+## SearchInterfaces 🔭
+
+- Gazeetter (osmNominatim, komootPhoton, WFS-StoredQuery)
+- elasticSearch
+- specialWFS
+
+### Addon Typ `searchInterface`
+- Benutzerdefiniertes Search-Backend
+- Bsp: eigene Gazeetter Services, APIs zu Fachthemen,- mehrstufige Suchen 
+- Import einer bestehenden SearchInterface-Klasse
+- Überschreiben von Methoden (z.B. `startSearch`, `filterReults` etc.)
+- Definieren von cutom Actions
+
+<section>
+  <img src="/bplansearch.png" class="" style="display: block; margin: 0 auto;" alt="Centered Image">
+</section>
+---
+layout: main
+---
+
+## Login 🔐
+
+- Anforderung: Rollen- bzw. benutzerspezifische Konfiguration (Tools und Layer)
+- Core-Modul `Login` (wird in config.js und config.json konfiguriert)
+  - `oidcAuthorizationEndpoint`
+  - `oidcClient`
+- OpenID Connect (**OIDC**) Protokoll (basiert auf **OAuth 2.0**)
+  - Austausch von Benutzerinformationen zwischen Identidy Provider (IdP) und Anwendung
+
+<section>
+  <img src="/mp-login-overview.drawio.svg" class="py-8" style="display: block; margin: 0 auto;" alt="Centered Image">
+</section>
+
+- `config.json` kann über einen API-Endpunkt geladen werden!
+  - [Portal Backend](https://gitlab.com/berlintxl/futr-hub/platform/stacks/geodata_stack/portal-backend)
+  - [masterportal-client.configs](https://github.com/Dataport/masterportal-clientconfigs)
+
+---
+layout: main
+---
+# Portal-Backend (tegel Lösung ✈️)
+
+![Sequence Diagram](https://gitlab.com/berlintxl/futr-hub/platform/stacks/geodata_stack/portal-backend/-/raw/v3/docs/sequence_diagram.png)
+
 
 
 ---
@@ -210,7 +262,7 @@ layout: two-cols-header
 layout: main
 ---
 
-# Hilfreiche Links
+# 📔 Hilfreiche Links
 
 <div class="py-12">
 
@@ -232,6 +284,7 @@ layout: statement
 # Vielen Dank
 ## für das Interesse 🤝
 
-
 <p class="py-28">Fragen gerne jetzt oder an:<br>
 blitza@terrestris.de, wagner@terrestris.de, maren.michaelis@dataport.de</p>
+
+# 🎄
