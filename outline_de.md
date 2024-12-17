@@ -1,8 +1,6 @@
-# Outline Masterportal Webinar
+# Konzept Masterportal Webinar 2024
 
-## Konzept
-
-- Voraufgezeichneter Talk ca. 1 h
+- Live Talk ca. 1 h
 - Live Fragerunde am Ende (mit Moderator) ca. 15-20 min?
     - Im Chat oder per Audio-Meldung
 
@@ -12,50 +10,45 @@
 
 |Zeit<div style="width:50px">|Inhalt<div style="width:290px"/>|Sprecher|
 |---|---|---|
-|15 min|Vorstellung der IP|Dataport|
-|10 min|"Theorieteil" Konfiguration<br>  - Global vs. Portalspezifisch<br> -Layer<br> -Services|Hannes|
-|25 min|Live Konfiguration|Hannes|
-|20 min|Ausblick<br>- geplante Entwicklungen|   |
+|5 min|Begrüßung und Vorstellung terrestris|Hannes|
+|15 min|Vorstellung der IP|Dataport?|
+|10 min|Überblick: Neuigkeiten v3 und Konfigurationsmöglichkeiten|Hannes|
+|20 min|Live Konfiguration|Hannes|
+|10 min|Offene Fragerunde|Alle|
 
+## Einladung / Zielgruppe
+
+- dataport integrieren
+- übliche Kanäle (website, social media)
+- Bestandskunden darauf aufmerksam machen
 
 ## Konkrete Inhalte
 
 1. **Vorstellung der IP**
 
-- Wie ist die IP organisiert? (Meetings vorstellen)
+- Wie ist die IP organisiert?
+    - Kommittees und Meetings vorstellen
 - Welche Aufgaben hat die IP?
-- Wer ist Mitglied
+- Wer ist bereits Mitglied, welche Vorteile habe ich als Mitglied?
 
-2. **Vorstellung Theorieteil**
+2. **Neuigkeiten und Konfigurationsmöglichleiten**
 
-- Framework / Basiskomponenten
-    - Vue.js
-    - Openlayers
-    - Bootstrap 5
-- Konfiguration (Applikationskontext)
-    - `services.json`
-    - `rest-services.json`
-    - `style.json`
-    - `config.js`
-    - `config.json`
-
-Jeweils allgemeine Erläuterung und konkrete Beispiele. Siehe hierzu: [Masterportal WS auf der FOSSGIS 2022](https://terrestris.github.io/masterportal-ws/latest/config/)
+- Kurz: Framework und Software Stack
+- Migration zu v3
+    - Was ist zu beachten bei der Migration?
+    - Kurzvorstellung neuer Module
+- Möglichkeiten zur Integration
+    - Einbettung bestehender Daten und Dienste
+    - Integration von Suchbackends
+- Userverwaltung    
 
 3. **Live Konfiguration**
 
-- Auschecken der letzten stabilen Version
+- Auschecken der LTS und Installation von Abhängigkeiten
 - Dev-Environment starten
-- Start: `basic` Portal
-- Sukzessive Konfiguration des Portals:
-    - Layer (WMS, WFS, WMTS)
-    - Rest-Services: Print und Suche
-    - Werkzeuge.
-    - Logo und Basic Farben
-    - ...
-
-4. **Ausblick**
-
-- Module in Entwicklung
-- Abschluss Migration
-- Einbettung in CMS
-- ...
+    - Im Hintergrund Docker-GDI starten (pygeoapi, postgres, geoserver)
+- Migration `npm run migrateConfig`
+    - Kurze Erläuterung des Logs
+- Anpassung an v3
+- Exemplarische Konfiguration der Suche
+- Anbindung an Nutzerverwaltung (Keycloak)

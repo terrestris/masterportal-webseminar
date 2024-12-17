@@ -6,16 +6,22 @@ colorSchema: light
 drawings:
   persist: false
 class: text-center text-black
-title: 'Masterportal Webinar'
+title: 'Masterportal Web-Seminar'
 layout: start
 ---
 # 
 
-![Masterportal Webinar Logo](/terrestris_webinar_logo.svg)
+![Masterportal Web-Seminar Logo](/terrestris_webinar_logo.svg)
 
-### In wenigen Schritten zum eigenen Geoportal
-##### terrestris und dataport am 30. Juni 2022
+### V3 Release: Neuigkeiten, Migration, Login-Mechanismus
+##### terrestris und dataport am 17. Dezember 2024
 
+
+---
+layout:  statement
+---
+# 👥Vorstellung der IP
+ 
 ---
 layout: two-cols-header
 ---
@@ -25,52 +31,48 @@ layout: two-cols-header
 
 ::left::
 
-- Open Source GIS aus Bonn seit **20 Jahren** 🥳
+- Open Source GIS aus Bonn seit **22 Jahren**
 - 25 MitarbeiterInnen und 2 Geschäftsführer
 - Aufbau von Geodateninfrastrukturen und WebGIS
   - modular mit etablierten OS-Komponenten
-  - Bspw. Berechtigungsmanagement
-- Präsent auf FOSSGIS und FOSS4G
+  - Fachsysteme (z.B. Gewässerschutz, Telekommunikation)
+  - Berechtigungsmanagement
+- Aktiv auf FOSSGIS und FOSS4G
 - Aktive Mitarbeit in vielen OS GIS Projekten
 - Geo-Consulting
 - Wartung und Support u.a. für
-  - Masterportal, MapProxy, SHOGun, OL, GeoServer, MapServer, QGIS, Postgres, Mapfish
+  - Masterportal, MapProxy, GeoStyler, SHOGun, OL, GeoServer, MapServer, QGIS, Postgres, Mapfish
 
 ::right::
 
-![terrestris](/terrestris_greece.png)
+![terrestris](/terrestris_spanbroek.png)
 
 <p class="text-center py-2">
 
-  info@terrestris.de
+  📫 info@terrestris.de
 
-  twitter: terrestrisde
+  🔗 linkedin: [terrestris-gmbh-co-kg](terrestris-gmbh-co-kg)
 
-  [github/terrestris.de](https://github.com/terrestris)
+  🎨 [github/terrestris.de](https://github.com/terrestris)
 
 </p>
 ---
 layout: main
 ---
 
-# Was erwartet Sie?
+# 📄 Was erwartet Sie?
 
 <div class="py-12">
 
 - 👥 **Vorstellung der IP (Implementierungs­­partnerschaft)**
 - 👨‍💻 **Technischer Background**
-- 🌍 **Globale Konfiguration**
-- ⚙️ **Portalkonfiguration**
-- 🛠 **Werkzeuge**
-- 🗺️ **Anbindung von Services (Print, Suche)**
-- 🪁 **Addons**
-- 🚀 **Ausblick**
+- 🌍 **Globale Konfiguration vs. ⚙️ Portalkonfiguration**
+- 📰 **V3 Neuerungen**
+- ⏫ **V3 Migration**
+- 🔭 **SearchInterface**
+- 🔐 **Integration Identitäts- und Zugriffsverwaltung**
+- ❓ **Fragerunde**
 </div>
-
----
-layout:  statement
----
-# 👥Vorstellung der IP
 
 ---
 layout: main
@@ -94,7 +96,7 @@ layout: main
     Bootstrap
   </span>
   <span class="basis-full px-5">
-    Frontend Framework
+    CSS Bibliothek
   </span>
 </div>
 
@@ -104,7 +106,7 @@ layout: main
     Openlayers
   </span>
   <span class="basis-full px-5">
-    Webmapping API
+    2D Webmapping API
   </span>
 </div>
 
@@ -118,6 +120,8 @@ layout: main
   </span>
 </div>
 
+- Weitere i18next, chart.js, jsts, axios
+
 ---
 layout: main
 
@@ -126,7 +130,7 @@ layout: main
 
 
 <div class="flex items-center mt-32">
-  <img src="/core-api-addon_paths.svg"  class="self-center" />
+  <img src="/code_architecture_v3.png"  class="self-center" />
 </div>
 ---
 layout: main
@@ -139,266 +143,94 @@ layout: main
   <img src="/code_architecture.png" class="w-9/10" />
 
 ---
-layout: two-cols-header
+layout: main
 ---
+# 📰 Neuerungen v3
 
-::title::
-# 🌍 Globale Konfiguration
-
-::left::
-
-## services.json
-
-- Zentrale Konfiguration für Layer
-- WMS, WFS, WMTS, SensorThings-API, GeoJSON u.a.
-- wird in der jeweiligen Portalkonfiguration `config.js` referenziert
-- Kann auch über einen API-Endpunkt generiert werden (z.B. Dienstemanager)
-
-::right::
-
-```json
-{
-    "id" : "8",
-    "name" : "Aerial View DOP 10",
-    "url" : "https://geodienste.hamburg.de/HH_WMS_DOP10",
-    "typ" : "WMS",
-    "layers" : "1",
-    "format" : "image/jpeg",
-    "version" : "1.3.0",
-    "singleTile" : false,
-    "transparent" : true,
-    "tilesize" : "512",
-    "gutter" : "0",
-    "minScale" : "0",
-    "maxScale" : "1000000",
-    "gfiAttributes" : "ignore",
-    "layerAttritibuon" : "nicht vorhanden",
-    "legend" : false
-}
-```
+- Menü Modul – neue Oberfläche
+  - Neuanordnung von Elementen und Layern: `MainMenu` und `SecondaryMenu`
+  - GUIs der einzelnen Module unverändert
+  - Neue GUI adressiert auch GIS unerfahrene User
+- Stärkung der **masterportalAPI**, um Nutzung in anderen Anwendungsgebieten zu ermöglichen
+  - z.B. Auslagerung aller Daten-Schnittstellen in die **masterportalAPI**
+- Customizable 🎨 
+    - Mehrere Möglichkeiten zur Individualisierung
+- Neues UI
+    - Entstanden im Rahmen einer größeren Studie/Umfrage
+- Vue3 und Vuex
+- Bootstrap 5
+    - UI Elemente (Buttons, Modals, Forms, Navs und tabs, ... )
 
 ---
-layout: two-cols-header
+layout: main
 ---
+# 📰 Neuerungen v3
 
-::title::
-# 🌍 Globale Konfiguration
+- Performance
+    - Refaktorierung Config and Layer Loading
+- Responsivity
+    - Design/Layout für Tablets und Smartphones optimiert
+- Map Controls: Können individueller konfiguriert werden
+- Addon-Typen:  Tools, GFI Themes, Controls, JavaScript, **SearchInterface**
+- Layer-Tree:
+  - Layer-Katalog (Suche, Baselayer, Layer)
+- Layer-Pills 💊
+- Weitere Tools: `News`, `baseLayerSwitcher`, `customMenuElement`, `StatisticDashboard`, `openConfig`, `About`
+- 3D: Core Refactoring, Print 3D, Modeler 3D --> [FOSSGIS Talk](https://pretalx.com/fossgis2024/talk/93LW77/)
 
-::left::
-## rest-services.json
-
-- Services, die nicht direkt für die Darstellung von Daten benötigt werden:
-  - Print services (MapFish)
-  - Metadata sources (CSW)
-  - BKG geocoding service
-  - Gazetteer URL
-  - WPS
-
-::right::
-
-## style.json
-
-- Styledefinitionen für Vektorlayer (Styling erfolgt im Client)
-
-```json
-  {
-    "styleId": "blue-point",
-    "rules": [
-      {
-        "style":
-          {
-          "circleRadius" : 6,
-          "circleStrokeColor": [51, 102, 255, 1],
-          "circleStrokeWidth": 2,
-          "circleFillColor": [51, 102, 255, 1]
-          }
-      }
-    ]
-  }
-```
----
-layout: two-cols-header
----
-
-::title::
-# ⚙️ Portalkonfiguration
-
-::left::
-
-## config.js
-
-- Pfade zu Backends und weiteren Konfigurationsdateien
-- Projektionsdefinitionen *(z.B. UTM32N, UTM33N)*
-- Liste an Addons
-- Quickhelp
-- Footer
-- Mousehover
-- Sprachen
-- Blacklist für GFI-Attribute (z.B. *geom, id*)
-
-::right::
-
-```js
-const Config = {
-    namedProjections: [
-        ["EPSG:25832", "+title=ETRS89/UTM 32N +proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"]
-    ],
-    footer: {
-        showVersion: true
-    },
-    quickHelp: {
-        imgPath: "./resources/img/"
-    },
-    layerConf: "./resources/services-internet.json",
-    restConf: "./resources/rest-services-internet.json",
-    styleConf: "./resources/style_v3.json",
-    scaleLine: true,
-    mouseHover: {
-      numFeaturesToShow: 2,
-      infoText: "(weitere Objekte. Bitte zoomen.)"
-    }
-}
-```
-
----
-layout: two-cols-header
----
-
-::title::
-# ⚙️ Portalkonfiguration
-
-::left::
-
-## config.json
-
-- Konfiguration der Portal-Oberfläche
-- Titel und Logo
-- Kartenelemente
-- Menüelemente
-- Werkzeuge und Addons
-- Suche 
-- Themenbaum (Layertree)
-
-::right::
-
-```json
-	"Portalconfig": {
-    "treeType": "light",
-		"searchBar": {
-			"komoot": {
-        "minChars": 3,
-        "serviceId": "11",
-        "limit": 20,
-        "lang": "de",
-        "lat": 53.6,
-        "lon": 10.0,
-        "bbox": "9.6,53.3,10.4,53.8"
-    },
-      "visibleVector": {
-		  "layerTypes": ["WFS"]
-	  },
-      "tree": {},
-			"startZoomLevel": 9,
-			"placeholder": "Suche nach: - Adresse - Aktiven WFS"
-		}
-	}
-```
 ---
 layout: statement
 ---
 # Live-Demo 🎮
 
 ---
-layout: iframe-right
-url: https://viz.berlin.de/wp-content/plugins/masterportal-wordpress/public/portals/berlin_2_19/index.html?layerIds=WebatlasBrandenburg,EcoCounter&transparency=30,0&lng=de
+layout: main
+---
+## SearchInterfaces 🔭
 
+- Gazeetter (osmNominatim, komootPhoton, WFS-StoredQuery)
+- elasticSearch
+- specialWFS
+
+### Addon Typ `searchInterface`
+- Benutzerdefiniertes Search-Backend
+- Bsp: eigene Gazeetter Services, APIs zu Fachthemen,- mehrstufige Suchen 
+- Import einer bestehenden SearchInterface-Klasse
+- Überschreiben von Methoden (z.B. `startSearch`, `filterReults` etc.)
+- Definieren von cutom Actions
+
+<section>
+  <img src="/bplansearch.png" class="" style="display: block; margin: 0 auto;" alt="Centered Image">
+</section>
+---
+layout: main
 ---
 
-## SensorThings API
+## Login 🔐
 
-- Datenfluss von IoT Sensoren
-- **Beispiele:** Verkehrszählungen, Mobilität, Luftmessnetzdaten
+- Anforderung: Rollen- bzw. benutzerspezifische Konfiguration (Tools und Layer)
+- Core-Modul `Login` (wird in config.js und config.json konfiguriert)
+  - `oidcAuthorizationEndpoint`
+  - `oidcClient`
+- OpenID Connect (**OIDC**) Protokoll (basiert auf **OAuth 2.0**)
+  - Austausch von Benutzerinformationen zwischen Identidy Provider (IdP) und Anwendung
 
-```json
-   {
-      "id" : "999999",
-      "name" : "Live - Charging locations",
-      "typ" : "SensorThings",
-      "version" : "1.0",
-      "url" : "https://51.5.242.162/itsLGVhackathon",
-      "intersect": true,
-      "urlParameter" : {
-         "root" : "Things",
-         "filter" : "startswith(Things/name,'Charging')",
-         "expand" : "Locations,Datastreams/Observations($orderby=phenomenonTime%20desc;$top=1)"
-      }
-      "mqttOptions" : {
-        "host" : "https://localhost",
-        "port": "1883"
-      }
-```
+<section>
+  <img src="/mp-login-overview.drawio.svg" class="py-8" style="display: block; margin: 0 auto;" alt="Centered Image">
+</section>
+
+- `config.json` kann über einen API-Endpunkt geladen werden!
+  - [Portal Backend](https://gitlab.com/berlintxl/futr-hub/platform/stacks/geodata_stack/portal-backend)
+  - [masterportal-client.configs](https://github.com/Dataport/masterportal-clientconfigs)
 
 ---
-layout: iframe-right
-url: https://test.geoportal-hamburg.de/vectorTiles
-
+layout: main
 ---
+# Portal-Backend (tegel Lösung ✈️)
 
-## VectorTiles
+![Sequence Diagram](https://gitlab.com/berlintxl/futr-hub/platform/stacks/geodata_stack/portal-backend/-/raw/v3/docs/sequence_diagram.png)
 
-```json
-{
-  "id": "UNIQUE_ID",
-  "name": "Ein Vektortilelayername",
-  "epsg": "EPSG:3857",
-  "url": "https://example.com/3857/tile/{z}/{y}/{x}.pbf",
-  "typ": "VectorTile",
-  "vtStyles": [
-    {
-      "id": "STYLE_2",
-      "name": "Nachtansicht",
-      "url": "https://example.com/3857/resources/styles/night.json"
-    }
-  ]
-}
-```
 
-### Ausblick
-- Optimierung VectorTile Support in OL
-- OGC API Tiles *(maps and vector tiles)*
-
----
-layout: two-cols-header
----
-
-::title::
-# Featureliste (Auszug)
-
-::left::
-
-- Strecke / Fläche messen
-- Zeichnen / Schreiben
-- Layerslider
-- <span class="text-blue-500 font-extrabold">Schrägluftbilder</span>
-- Vergleichslisten
-- Koordinatenabfrage
-- <span class="text-green-500 font-extrabold">Elastic Search</span>
-- Informationsabfrage Metadaten
-- Informationen abfragen (Attribute) + Theming
-- Koordinatensuche
-- <span class="text-red-500 font-extrabold">Komoot Photon</span>
-- Auswahl speichern (Permalink)
-
-::right::
-- <span class="text-yellow-500 font-extrabold">Graph</span>
-- Auswahl Vektordienstübergreifend
-- <span class="decoration-green-500 text-blue-500 font-extrabold">Mehrsprachigkeit</span>
-- Buffer Analyse
-- Time Slider
-- <span class="text-green-500 font-extrabold">Flurstückssuche</span>
-- Layer Swipe
-- Aktive Themen durchsuchen
-- <span class="text-red-500 font-extrabold">Routing</span>
 
 ---
 layout: two-cols-header
@@ -408,60 +240,41 @@ layout: two-cols-header
 # 🪁 Addons
 
 ::left::
-
-- <span class="font-extrabold text-green-500">Vue.js</span> Komponenten (früher Backbone)
-- Kommunikation mit den Core-Komponenten über <span class="font-extrabold text-green-500">Vuex</span> (*zentrales state management*)
-- Beliebige, individuelle Tools oder GFI-Themes
-- Erweiterung von
-  - Kartenfunktionen
-  - Suchen
-  - Layout
-
-::right::
 ## Beispiele:
-- BORIS
+- populationRequest
+- commuterFlows
 - <span class="font-extrabold text-blue-500">Einwohnerabfrage</span>
-- backgroundSwitcher
 - <span class="font-extrabold text-red-500">Erweiterte Suche (Detailsuche)</span>
-- scaleLineCustom
-- mpJsApi (Javascript API, zum Steuern des Masterportals von außen)
+- Custom GFI Themes
 - <span class="font-extrabold text-yellow-500">Generische Import und Export-Tools</span>
   - Einstieg von verschiedenen Komponenten (Suche, Tree, Menü)
   - SHAPE, GPKG, GeoJSON
   - Styling beim Import von Vektordaten
+- Custom SearchInterfaces
 
----
-layout: main
----
-# 🚀 Ausblick
+::right::
 
-<div class="py-12">
-
-- Verknüpfung Masterportal Anwendung mit Fachanwendungen
-- Verbesserung der Einbindung in CMS
-- Erweiterung der Flurstückssuche
-- Daten-Analyse und Präsentation
-- Verbesserung der Barrierearmut
-- Großformatiges Plotten
-- ...
-
-</div>
+- https://bitbucket.org/geowerkstatt-hamburg/addons
+- https://github.com/Dataport/MasterportalAddonshttps://github.com/Dataport/MasterportalAddons
+- https://github.com/terrestris/masterportal-addons
 
 ---
 layout: main
 ---
 
-# Hilfreiche Links
+# 📔 Hilfreiche Links
 
 <div class="py-12">
+
+- [Migrate Config Guide](https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/v3.3.3/docs/User/Misc/migrateConfigv2Tov3.md)
 
 - [FOSSGIS Masterportal Workshop Unterlagen](https://terrestris.github.io/masterportal-ws)
 
-- [Masterportal Dokumentation](https://www.masterportal.org/files/masterportal/html-doku/doc/latest/doc.html)
+- [Masterportal Dokumentation](https://www.masterportal.org/mkdocs/doc/v3.2.0/doc.html)
 
 - [FOSSGIS Videos zum Masterportal (media.ccc.de)](https://media.ccc.de/search/?q=masterportal)
 
-- [Liste von Masterportalen in der Praxis](https://www.masterportal.org/referenzen.html)
+- [Liste von Masterportalen in der Praxis](https://www.masterportal.org/referenzen/referenzen)
 
 </div>
 
@@ -471,6 +284,7 @@ layout: statement
 # Vielen Dank
 ## für das Interesse 🤝
 
-
 <p class="py-28">Fragen gerne jetzt oder an:<br>
-blitza@terrestris.de, jens.nienaber@dataport.de</p>
+blitza@terrestris.de, wagner@terrestris.de, maren.michaelis@dataport.de</p>
+
+# 🎄
