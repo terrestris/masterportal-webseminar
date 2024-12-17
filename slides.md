@@ -11,7 +11,7 @@ layout: start
 ---
 # 
 
-![Masterportal Web-Seminar Logo](/terrestris_webinar_logo.svg)
+![Masterportal Web-Seminar Logo](/terrestris_webseminar_logo.svg)
 
 ### V3 Release: Neuigkeiten, Migration, Login-Mechanismus
 ##### terrestris und dataport am 17. Dezember 2024

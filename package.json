@@ -1,11 +1,11 @@
 {
-  "name": "masterportal-webinar",
+  "name": "masterportal-webseminar",
   "version": "2.0.0",
   "private": true,
-  "description": "Slides for the Masterportal Webinar.",
+  "description": "Slides for the Masterportal Webseminar.",
   "author": "Hannes Blitza <blitza@terrestris.de> (https://terrestris.de)",
   "scripts": {
-    "build": "slidev build --base /masterportal-webinar/",
+    "build": "slidev build --base /masterportal-webseminar/",
     "dev": "slidev --open",
     "export": "slidev export"
   },

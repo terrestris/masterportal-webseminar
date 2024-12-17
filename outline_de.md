@@ -1,4 +1,4 @@
-# Konzept Masterportal Webinar 2024
+# Konzept Masterportal Webseminar 2024
 
 - Live Talk ca. 1 h
 - Live Fragerunde am Ende (mit Moderator) ca. 15-20 min?
