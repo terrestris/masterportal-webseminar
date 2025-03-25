@@ -1,28 +1,30 @@
-## Einladung zum zweiten Masterportal Webseminar
+## Einladung zum dritten Masterportal Webseminar
+
+Ein Datenerfassungs-AddOn für das Masterportal
 
 ![terrestris Webseminar Logo](public/terrestris_webseminar_logo.svg)
 
-`“Masterportal: Migration auf v3 und Integration in GDI`
+`Ein Datenerfassungs-AddOn für das Masterportal`
 
-Wer durch die öffentlichen Geoportale des Bundes, der Länder und vieler Kommunen im deutschsprachigen Raum navigiert, stößt in letzter Zeit zunehmend auf GIS-Clients die auf dem Open Source Toolkit Masterportal basieren.
+Die Kreisverwaltung Warendorf betreibt eine GDI mit diversen Masterportal Instanzen. Eine wiederkehrende Aufgabe ist es, einfache Geodaten zu erheben oder Alphanumerik an bestehenden Geometrien zu ändern. Das können z.B.  Winterdienststrecken sein, der Zustand von Gewerbeflächen im Eigentum des Kreises oder die Verortung von Brunnen sowie die Dokumentation von Kontrollen. Also sowohl interne Workflows, als auch Information für Bürger und Wirtschaft.  
 
-Das neue Major Release wurde auf der vom [LGV](https://www.hamburg.de/politik-und-verwaltung/behoerden/behoerde-fuer-stadtentwicklung-und-wohnen/aemter-und-landesbetrieb/landesbetrieb-geoinformation-und-vermessung) [FOSSGIS in HH](https://pretalx.com/fossgis2024/talk/R8MYNT/) offiziell vorgestellt und ist seit Oktober als LTS-Version erschienen (v3.3).
+Gut strukturierte und gut organisierte Workflows zur Datenerfassung sind essentiell für den Betrieb von Geodateninfrastrukturen. In enger Zusammenarbeit mit dem Kreis Warendorf wurde auf Basis der GDI des Kreises ein abgesichertes AddOn für das Masterportal sowie Datenbank-Frontend und -Backend entwickelt. Die eigentlichen Anwendungen oder 'Apps' werden über eine einfache Konfiguration erstellt, mit der sich relativ einfach individuelle Workflows zur Datenerfassung erzeugen lassen (Stichwort: Low-Code Plattform). 
 
-Koordiniert und angetrieben durch die Mitglieder der IP (Implementierungspartnerschaft) wird das Projekt fortwährend weiterentwickelt und ist somit zu einem integralen Bestandteil vieler GDIs im deutschsprachigem Raum geworden.
+Mit dem form-backend [1] lassen sich mittels JSON-Konfigurationen individuelle Formulare erstellen, die sowohl einfache als auch komplexe Tabellenstrukturen abbilden können. Der Datenzugriff erfolgt hierbei via PostgREST, auf eine PostgreSQL Datenbank. Für das Rendering der Formulare wurde eine Web-App mit einer Übersicht (table view) und einer Detailansicht (item view) entwickelt: In der Übersicht lassen sich alle Einträge der Tabelle bzw. der verknüpften Tabellen anzeigen, filtern und sortieren. Über entsprechende Aktionsbuttons kann in die Detailansicht gewechselt und der entsprechende Eintrag editiert werden.
 
-terrestris lädt Sie herzlich zum zweiten kostenfreien **Masterportal Webseminar** am **18. Dezember um 10:00 Uhr** ein. In einer 1-stündigen Session werden u.a. die folgenden Themen beleuchtet:  
+Die Integration in das Masterportal bietet viele Vorteile: Es können Geometrien aus vorhandenen Vektorlayern in das Formular übernommen werden - ebenso können Geometrien gezeichnet werden oder der aktuelle Standort als Input für Formularfelder übernommen werden. Hierfür wurde ein AddOn entwickelt, das Formulare als IFrame einbindet und über die PostMessage-API mit dem Portal kommuniziert [2]. 
 
-- Vorstellung der IP (Implementierungs­­partnerschaft Masterportal) durch [dataport](https://www.dataport.de/was-wir-bewegen/portfolio/masterportal/).
-- Überblick: Neue Features in v3 und neue Konfigurationsmöglichkeiten
-- Migration: Was ist zu beachten?
-- Integration:
-    - Einbindung von Such-Backends (Beispiele)
-    - Anbindung an Benutzerdatenverwaltung
+Die Formulare können aber auch standalone genutzt werden und funktionieren dann ohne den ganzen Overhead des Masterportals, was für viele Routineaufgaben völlig ausreicht und die Komponenten sauber trennt und eine unabhängige Weiterentwicklung gewährleistet. 
 
-Das Webseminar richtet sich an all diejenigen, die einen Umstieg auf die v3 Version vorhaben oder generell einen Einstieg in die Software erlangen wollen.
+Zur Zugriffskontrolle auf die Formulare sowie auf die Daten bietet die Lösung eine Anbindung an zentrale Identity & Access Management Systeme (Keycloak). Per Konfiguration lässt sich steuern, welche Rollen welche Art von Zugriff (lesend oder schreibend) auf die Übersicht oder Detailansicht erlangen sollen. Somit sind die Formulare und Daten vor ungewollten Zugriff geschützt.
+
+terrestris und der Kreis Warendorf möchten im Rahmen des Webseminars einen praxisnahen Einstieg in die Datenerfassungs-Lösung präsentieren und die vielfältigen Anwendungsmöglichkeiten beleuchten. Wir laden Sie und euch herzlich zum dritten kostenfreien **Masterportal Webseminar** am **08. April 2025 um 10:00 Uhr** ein.
+
+[1] https://github.com/formcapture/form-backend
+[2] https://github.com/formcapture/masterportal-addons
 
 ## Wichige Infos:
 
 **Kosten:** Keine  
-**Anmeldung:** Email an info@terrestris.de bis zum **11.12.2024** mit Betreff [Anmeldung Masterportal Webseminar]  
+**Anmeldung:** Email an info@terrestris.de bis zum **03.04.2025** mit Betreff [Anmeldung Masterportal Webseminar]  
 **Zugangslink:** Wird nach erfolgter Annmeldung mitgeteilt.
