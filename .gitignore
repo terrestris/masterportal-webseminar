@@ -6,4 +6,5 @@ dist
 components.d.ts
 notes.md
 skript.md
-
+*.pdf
+.vscode

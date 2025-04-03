@@ -29,3 +29,23 @@
 .text-m {
     font-size: x-large;
 }
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+.box {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0);
+    border: 0px solid #ccc;
+    border-right-width: 1px;
+}
+.box:last-child {
+    border-right: none;
+}
+
+ul li::marker {
+    color: #002565; /* Change to any color */
+    font-size: 1.5em; /* Adjust size if needed */
+}

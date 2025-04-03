@@ -10,18 +10,18 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.34.2",
+    "@slidev/cli": "^51.5.0",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "*",
-    "@vue/compiler-sfc": "*",
-    "autoprefixer": "*",
-    "playwright-chromium": "^1.23.1",
-    "postcss": "*",
-    "tailwindcss": "2.2.*",
-    "typescript": "*",
-    "vite": "*"
+    "@vitejs/plugin-vue": "5.2.3",
+    "@vue/compiler-sfc": "3.5.13",
+    "autoprefixer": "10.4.21",
+    "playwright-chromium": "^1.51.1",
+    "postcss": "8.5.3",
+    "tailwindcss": "4.1.1",
+    "typescript": "5.8.2",
+    "vite": "6.2.5"
   }
 }
