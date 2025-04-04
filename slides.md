@@ -24,7 +24,7 @@ layout: main
 
 <div class="py-12 text-m">
 
-- 🏗️ **Projektkontext**
+- 🏗️ **Vision und Projektkontext**
 - 🚰 **Use Case Trinkwasserbrunnen**
 - 🌳 **Use Case Kompensationsflächen**
 - 👨‍💻 **Architektur**
@@ -106,7 +106,6 @@ layout: warendorf
   - Vermarktung von Gewerbeflächen
   - Erfassung von Stadtmöblierung
   - Kartierung von Riesenbärenklaubeständen
-
 
 ---
 layout: main
@@ -237,7 +236,7 @@ layout: two-cols-header
 
 ::title::
 
-# **Loslegen**
+# 🚀 **Loslegen**
 
 - [Demo Setup (Docker Compose)](https://github.com/formcapture/form-backend/tree/main/demo)
 
