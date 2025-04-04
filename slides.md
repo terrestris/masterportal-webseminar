@@ -69,13 +69,44 @@ layout: two-cols-header
 </div>
 
 ---
-layout: main
+layout: warendorf
 ---
-# **Vision und Projektkontext**
+# **Vision**
 
-- Tool für das Masterportal, mit dem Daten georeferenziert erfasst und bearbeitet werden können
-- Abbildung von komplexen Datenmodellen sollte möglich sein
-- Erfassung von Geo- und Sachdaten durch Einbindung anbieter-unabhängiger Formulare
+## Ziel
+- Fachämter und Gemeinden mit einem Tool befähigen, selbstständig Daten georeferenziert erfassen und bearbeiten zu können
+
+## Anforderungen
+- Masterportal-Tool 
+- Einbindung anbieterunabhängiger Formulare zur Datenerfassung
+- Abbildung von komplexen Datenmodellen
+- Upload von Dateien (Fotos, PDFs etc.)
+- Open Source
+
+---
+layout: warendorf
+class: text-m
+---
+# Projektkontext
+
+- Umsetzung der Idee als agiles Projekt
+- In regelmäßigen Sprints wurden Konzepte entwickelt, implementiert und getestet
+- Dauer das Projekts ca. 6 Monate
+
+---
+layout: warendorf
+---
+# Aktueller Stand
+
+- Erste Anwendungen in der Testumgebung
+- Austausch mit Fachämtern und kreisangehörigen Kommunen zur Umsetzung verschiedener Anwendungsfälle:
+- Hygienekontrollen des Gesundheitsamts (Brunnen)
+  - Hausnummernerfassung in den Kommunen
+  - Planung Winterdienststrecken
+  - Vermarktung von Gewerbeflächen
+  - Erfassung von Stadtmöblierung
+  - Kartierung von Riesenbärenklaubeständen
+
 
 ---
 layout: main
@@ -98,7 +129,7 @@ Querschnittsthema: Stadtplanungs- und Bauamt, Umwelt- und Gesundheit, Wasserwerk
         <li>Status</li>
         <li>Inbetriebnahme</li>
         <li>Standort</li>
-        <li><i>Inspektion</i></li>
+        <li><i>Inspektionen</i></li>
         <li><i>Typ</i></li>
       </ul>
     </div>
@@ -113,7 +144,6 @@ Querschnittsthema: Stadtplanungs- und Bauamt, Umwelt- und Gesundheit, Wasserwerk
       <b>Wartungspersonal</b><br/>
       <ul>
         <li>Name</li>
-        <li><i>Amt</i></li>
       </ul>
     </div>
     <div class="box">
@@ -181,7 +211,6 @@ layout: statement
 
 ---
 layout: main
-class: h-screen
 ---
 
 # **Architektur**
@@ -200,6 +229,7 @@ layout: main
 - Ausbau der Karteninteraktionen
 - Ausbau der Digitalisierungsmöglichkeiten
 - Optimierung des Formular Layouts
+- Unterstützung 
 
 ---
 layout: two-cols-header
@@ -219,7 +249,7 @@ layout: two-cols-header
   - ...
 - Austausch Datenmodellierung
 - Austausch über Konfigurationen
-- Zusammenarbeit in IP
+- Zusammenarbeit für Weiterentwicklung
 
 ::right::
 **terrestris**
@@ -233,10 +263,18 @@ layout: two-cols-header
 ---
 layout: statement
 ---
-# Vielen Dank
+## Vielen Dank
 ## für das Interesse 🤝
 
-<div class="py-28">Fragen gerne jetzt oder an:<br>
+<div class="py-4"><b>Fragen gerne jetzt stellen oder an:</b><br>
 blitza@terrestris.de, suleiman@terrestris.de<br/>
 Maria.Wunsch@kreis-warendorf.de, Marlena.Hecker@kreis-warendorf.de
 </div>
+<div class="logos-end">
+  <img class="footer-logo py-2" src="/terrestris-logo-normal.svg" />
+  <img class="footer-logo py-2" src="/warendorf_logo.png" />
+  <img class="footer-logo py-2" src="/eu_nextgen_logo.png" />
+</div>
+
+### 🗣️ **08.05. 10 Uhr** - Webseminar mundialis
+#### "Offene Geodaten der Bundesländer: Verfügbarkeit und Anwendung in der Einzelbaumerkennung"

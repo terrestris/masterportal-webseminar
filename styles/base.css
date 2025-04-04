@@ -49,3 +49,19 @@ ul li::marker {
     color: #002565; /* Change to any color */
     font-size: 1.5em; /* Adjust size if needed */
 }
+.logos-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.logos-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.logos-end img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
