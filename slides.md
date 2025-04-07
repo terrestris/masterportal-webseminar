@@ -20,7 +20,7 @@ layout: start
 layout: main
 ---
 
-# 📄 **Was erwartet euch?**
+# **Was erwartet euch?**
 
 <div class="py-12 text-m">
 
@@ -43,14 +43,13 @@ layout: two-cols-header
 ::left::
 
 - Open Source GIS aus Bonn seit > 20 Jahren
-- 25 MitarbeiterInnen und 2 Geschäftsführer
+- 24 MitarbeiterInnen und 2 Geschäftsführer
 - Aufbau von Geodateninfrastrukturen und WebGIS
   - modular mit etablierten OS-Komponenten
   - Fachsysteme (z.B. Gewässerschutz, Telekommunikation)
   - Berechtigungsmanagement
 - Aktiv auf FOSSGIS und FOSS4G
 - Aktive Mitarbeit in vielen OS GIS Projekten
-- Geo-Consulting
 - Wartung und Support u.a. für
   - Masterportal, MapProxy, GeoStyler, SHOGun, OL, GeoServer, MapServer, QGIS, Postgres, Mapfish
 
@@ -87,7 +86,7 @@ layout: warendorf
 layout: warendorf
 class: text-m
 ---
-# Projektkontext
+# **Projektkontext**
 
 - Umsetzung der Idee als agiles Projekt
 - In regelmäßigen Sprints wurden Konzepte entwickelt, implementiert und getestet
@@ -96,7 +95,7 @@ class: text-m
 ---
 layout: warendorf
 ---
-# Aktueller Stand
+# **Aktueller Stand**
 
 - Erste Anwendungen in der Testumgebung
 - Austausch mit Fachämtern und kreisangehörigen Kommunen zur Umsetzung verschiedener Anwendungsfälle:
@@ -192,6 +191,18 @@ Das kommunale Kataster für Ausgleichs- und Kompensationsflächen unterstützt e
         <li>Foto</li>
       </ul>
     </div>
+    <div class="box">
+      <b>Eigentümer</b><br/>
+      <ul>
+        <li>Name</li>
+      </ul>
+    </div>
+    <div class="box">
+      <b>Status</b><br/>
+      <ul>
+        <li>Status</li>
+      </ul>
+    </div>
 </div>
 
 <!-- ## **Use Cases**
@@ -217,18 +228,26 @@ layout: main
 <img src="/form-backend-architecture.drawio.png" width="50%" />
 
 ---
-layout: main
+layout: two-cols-header
 ---
-# **Weiterentwicklung**
+::title::
+
+# **Weiterentwicklungen**
+
+::left::
+# Epics
 
 - Addon: Integration in Masterportal Core
 - JSON Schema für die Konfiguration (Autocompletion)
-- Typescript Typings für PostgREST Definitionen
-- Caching der Form Konfigurationen
 - Ausbau der Karteninteraktionen
 - Ausbau der Digitalisierungsmöglichkeiten
 - Optimierung des Formular Layouts
-- Unterstützung 
+
+::right::
+# Features
+- Typescript Typings für PostgREST Definitionen
+- Automatische Berechnung der Flächengröße von Polygonen
+- Caching der Form Konfigurationen
 
 ---
 layout: two-cols-header
@@ -258,6 +277,7 @@ layout: two-cols-header
 - Support
 - Weiterentwicklung
 - Wartung
+- Upgrade auf Masterportal v3
 
 ---
 layout: statement
