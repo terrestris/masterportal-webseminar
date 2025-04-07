@@ -22,7 +22,7 @@ layout: main
 
 # **Was erwartet euch?**
 
-<div class="py-12 text-m">
+<div class="py-12">
 
 - 🏗️ **Vision und Projektkontext**
 - 🚰 **Use Case Trinkwasserbrunnen**
@@ -84,7 +84,6 @@ layout: warendorf
 
 ---
 layout: warendorf
-class: text-m
 ---
 # **Projektkontext**
 
@@ -99,7 +98,7 @@ layout: warendorf
 
 - Erste Anwendungen in der Testumgebung
 - Austausch mit Fachämtern und kreisangehörigen Kommunen zur Umsetzung verschiedener Anwendungsfälle:
-- Hygienekontrollen des Gesundheitsamts (Brunnen)
+  - Hygienekontrollen des Gesundheitsamts (Brunnen)
   - Hausnummernerfassung in den Kommunen
   - Planung Winterdienststrecken
   - Vermarktung von Gewerbeflächen
@@ -200,7 +199,7 @@ Das kommunale Kataster für Ausgleichs- und Kompensationsflächen unterstützt e
     <div class="box">
       <b>Status</b><br/>
       <ul>
-        <li>Status</li>
+        <li>Name</li>
       </ul>
     </div>
 </div>
@@ -238,16 +237,19 @@ layout: two-cols-header
 # Epics
 
 - Addon: Integration in Masterportal Core
+- Admin-UI für Formular-Konfigurationen
 - JSON Schema für die Konfiguration (Autocompletion)
-- Ausbau der Karteninteraktionen
-- Ausbau der Digitalisierungsmöglichkeiten
-- Optimierung des Formular Layouts
+- Verknüpfte Formulare
+- Granulares Rechtemanagement
 
 ::right::
 # Features
-- Typescript Typings für PostgREST Definitionen
-- Automatische Berechnung der Flächengröße von Polygonen
-- Caching der Form Konfigurationen
+- Ausbau der Karteninteraktionen
+  - Filtern nach Kartenausschnitt
+  - Geocoder
+  - Kartenintegration im standalone Viewer
+- Ausbau der Digitalisierungsmöglichkeiten
+- UI Polishing
 
 ---
 layout: two-cols-header
@@ -272,7 +274,7 @@ layout: two-cols-header
 ::right::
 **terrestris**
 
-- Integration in vorhandenes System
+- Integration in vorhandene Systeme
 - Schulungen & Workshops
 - Support
 - Weiterentwicklung
