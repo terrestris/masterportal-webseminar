@@ -45,13 +45,12 @@ layout: two-cols-header
 - Open Source GIS aus Bonn seit > 20 Jahren
 - 24 MitarbeiterInnen und 2 Geschäftsführer
 - Aufbau von Geodateninfrastrukturen und WebGIS
-  - modular mit etablierten OS-Komponenten
+  - Modular mit etablierten OS-Komponenten
   - Fachsysteme (z.B. Gewässerschutz, Telekommunikation)
   - Berechtigungsmanagement
 - Aktiv auf FOSSGIS und FOSS4G
 - Aktive Mitarbeit in vielen OS GIS Projekten
-- Wartung und Support u.a. für
-  - Masterportal, MapProxy, GeoStyler, SHOGun, OL, GeoServer, MapServer, QGIS, Postgres, Mapfish
+- Masterportal, MapProxy, GeoServer, QGIS, Postgres, Superset, SHOGun
 
 ::right::
 
