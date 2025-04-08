@@ -223,7 +223,7 @@ layout: main
 
 # **Architektur**
 
-<img src="/form-backend-architecture.drawio.png" width="50%" />
+<img src="/form-backend-architecture.drawio.svg" width="50%" />
 
 ---
 layout: two-cols-header
