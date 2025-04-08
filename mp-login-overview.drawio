@@ -1,0 +1,19 @@
+<mxfile host="app.diagrams.net" modified="2024-12-16T17:03:02.924Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" etag="6U0Rz9K2LqjG2SyObytQ" version="24.6.5" type="device">
+  <diagram name="Seite-1" id="DwJhdzhpLZEVd3dmld_s">
+    <mxGraphModel dx="1136" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8MnpE05tvlufnA5_sT3d-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;IDM&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;User Authentication&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="560" y="220" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8MnpE05tvlufnA5_sT3d-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Masterportal&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Login Modul&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8MnpE05tvlufnA5_sT3d-3" value="&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Autorisierungskomponente&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Rollenspezifische Konfiguration&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="300" y="220" width="240" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
